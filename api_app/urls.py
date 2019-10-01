@@ -19,5 +19,6 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
+    url(r'^$',views.index_api_response,name="index_api_response"),
     url(r'^employees',views.EmployeeListView.as_view())
 ]
