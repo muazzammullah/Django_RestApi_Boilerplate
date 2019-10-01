@@ -21,5 +21,5 @@ from api_app import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     #url(r'^employees/',views.EmployeeListView.as_view()),
-    url(r'^employees/', include('api_app.urls')),
+    url(r'^api/', include('api_app.urls')),
 ]
